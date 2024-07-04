@@ -20,4 +20,5 @@ Route::post('/login', [LoginController::class, 'login']);
 Route::middleware(['auth:sanctum'])->group(function(){
     Route::post('/upload', [BerkasController::class, 'upload']);
     Route::post('/get-file', [BerkasController::class, 'getfile']);
+    Route::post('/logout', [LoginController::class, 'logout']);
 });
