@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('path');
             $table->string('type')->nullable();
             $table->string('size')->nullable();
-            $table->string('kategori');
+            $table->enum('kategori', ['Pribadi', 'Umum']);
             $table->foreignId('user_id')->constrained('users');
             $table->timestamps();
         });
