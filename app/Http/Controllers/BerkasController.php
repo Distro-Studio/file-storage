@@ -92,6 +92,10 @@ class BerkasController extends Controller
             return response()->json(new WithoutDataResource(Response::HTTP_INTERNAL_SERVER_ERROR, 'Something Wrong'));
         }
 
-        return response()->download(public_path('/storage/file/'. $berkas->filename));
+        // return response()->download(public_path('/storage/file/'. $berkas->filename));
+        return response()->file(public_path('/storage/file/'. $berkas->filename));
+        // return response()->json(new DataResource(Response::HTTP_OK, 'File berhasil diupload', [
+        //     'path' => '/storage/file/'. $berkas->filename,
+        // ]),Response::HTTP_OK);
     }
 }
