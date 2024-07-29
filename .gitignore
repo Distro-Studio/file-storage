@@ -1,14 +1,14 @@
 /.phpunit.cache
-
 # /public/build
 # /public/hot
-# /public/storage
+/public/storage
 # /storage/*.key
 # .env.backup
 # .env.production
 # .phpunit.result.cache
 # Homestead.json
 # Homestead.yaml
+# /public/storage
 # auth.json
 # npm-debug.log
 # yarn-error.log
