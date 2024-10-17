@@ -26,6 +26,10 @@ $app = new Illuminate\Foundation\Application(
 |
 */
 
+// $app->bind('path.public', function() {
+//     return '/path/to/your/new/public/folder'; // Ganti dengan path aktual
+// });
+
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
     App\Http\Kernel::class
